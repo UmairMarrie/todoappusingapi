@@ -1,8 +1,10 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todoappusingapi/Model/TodoModel.dart';
+
 import 'package:http/http.dart'as http;
+import 'package:todoappusingapi/Model/TodoModel.dart';
 
 class Todocontroller extends GetxController{
 
@@ -25,4 +27,34 @@ void onInit(){
       return TodoList;
     }
   }
+
+
+Future <void> postTodos(title) async {
+    final response = await http.post(Uri.parse("https://66af2874b05db47acc59234f.mockapi.io/api/todolist",),
+       headers:{'Content-Type':'Application/json'},
+       body:json.encode({"title":title})
+);
+
+if(response.statusCode==201){
+  TodoList.clear();
+  getTodos();
+}else{
+  print("Failed");
 }
+    
+  }
+
+  Future <void> DeleteTodo(id) async {
+    final response = await http.delete(Uri.parse("https://66af2874b05db47acc59234f.mockapi.io/api/todolist/$id"));
+    if(response.statusCode==200){
+      TodoList.clear();
+      getTodos();
+    }
+    else{
+      print("Failed");
+    }
+  }
+
+  
+}
+
