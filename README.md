@@ -1,16 +1,6 @@
-# todoappusingapi
+Todo App using Api with Getx state Management
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1722876608](https://github.com/user-attachments/assets/ef821237-64b0-47fe-a0b4-348d7dd79dfb)
+![Screenshot_1722876614](https://github.com/user-attachments/assets/b11f5b36-9abe-433b-b2ad-45b13c412fe6)
+![Screenshot_1722876618](https://github.com/user-attachments/assets/192697f5-746c-438e-ae2c-e308e277e6c4)
